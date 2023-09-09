@@ -10,8 +10,8 @@ dotenv.config();
 
 // router import
 
-const userRoutes = require("./routes/userRoutes");
-const blogRoutes = require("./routes/blogRoutes");
+app.use("/api/v1/user", require("./routes/userRoutes"));
+app.use("/api/v1/blog", require("./routes/blogRoutes"));
 
 
 
